@@ -81,7 +81,7 @@ export const Hero = () => {
       >
         <img
           className="mt-[-25%]"
-          src="/assets/profilbild-no-background.png"
+          src="./assets/profilbild-no-background.png"
           alt="Milton Savander"
         />
       </motion.div>
