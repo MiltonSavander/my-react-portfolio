@@ -6,7 +6,7 @@ interface Props {
 
 const Navbar = ({ openNav }: Props) => {
   return (
-    <div className="fixed top-4 left-4 right-4 mx-auto max-w-[1400px] rounded-2xl h-[90px] bg-myBlue py-4 bg-opacity-90 bg-clip-padding backdrop-blur-sm ">
+    <div className="fixed z-50 top-4 left-4 right-4 mx-auto max-w-[1400px] rounded-2xl h-[90px] bg-myBlue py-4 bg-opacity-90 bg-clip-padding backdrop-blur-sm ">
       <div className="flex items-center justify-between w-[85%] h-full mx-auto">
         <div className="flex-0.6 cursor-pointer text-[25px] text-myDarkLightBlue font-bold">
           <h1>

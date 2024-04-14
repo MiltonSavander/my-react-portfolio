@@ -4,6 +4,7 @@ import MobileNav from "./MobileNav";
 import { Hero } from "./Hero";
 import SocialLinks from "./SocialLinks";
 import AboutMe from "./AboutMe";
+import Technologies from "./Technologies";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -19,9 +20,9 @@ function App() {
       <SocialLinks />
       {/* hero */}
       <Hero />
-      <Hero />
       <AboutMe />
-      {/* <img src="../src/assets/3547.jpg" alt="" /> */}
+      <AboutMe />
+      <Technologies />
     </>
   );
 }

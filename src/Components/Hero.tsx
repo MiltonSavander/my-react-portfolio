@@ -59,7 +59,7 @@ export const Hero = () => {
           variants={textVariants}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
         >
-          web utväcklare
+          webbutväcklare
         </motion.h2>
         <motion.button
           variants={textVariants}
