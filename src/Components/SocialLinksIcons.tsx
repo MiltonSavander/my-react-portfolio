@@ -6,7 +6,7 @@ export const Linkedin_icon = () => {
       <div className={`${style}`}>
         <img
           className="size-10"
-          src="../../assets/linkedin_icon.svg"
+          src="./../assets/linkedin_icon.svg"
           alt="linkedin"
         />
       </div>
@@ -20,7 +20,7 @@ export const Github_icon = () => {
       <div className={`${style}`}>
         <img
           className="size-10"
-          src="../../assets/github_icon.svg"
+          src="./../assets/github_icon.svg"
           alt="github"
         />
       </div>
@@ -34,7 +34,7 @@ export const Email_icon = () => {
       <div className={`${style}`}>
         <img
           className="size-10"
-          src="../../assets/email_icon.svg"
+          src="./../assets/email_icon.svg"
           alt="email_icon"
         />
       </div>
