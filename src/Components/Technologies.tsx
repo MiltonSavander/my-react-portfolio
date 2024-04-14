@@ -23,7 +23,7 @@ function Technologies() {
           >
             <img
               className="w-[80%] h-[80%]"
-              src={`../../public/assets/techIcons/${path}`}
+              src={`../../assets/techIcons/${path}`}
               alt={path}
             />
           </div>
