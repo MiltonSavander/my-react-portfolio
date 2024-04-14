@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import profilbild from "./assets/profilbild-no-background.png";
+import profilbild from "../assets/profilbild-no-background.png";
 
 export const Hero = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
