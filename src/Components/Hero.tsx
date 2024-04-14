@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import profilbild from "./assets/profilbild-no-background.png";
 
 export const Hero = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -79,11 +80,7 @@ export const Hero = () => {
         animate="visible"
         className="profile-container bg-gradient-to-tr from-myDarkBlue to-myBlue size-[200px] sm:size-[250px] md:size-[300px] lg:size-[350px] overflow-hidden"
       >
-        <img
-          className="mt-[-25%]"
-          src="./assets/profilbild-no-background.png"
-          alt="Milton Savander"
-        />
+        <img className="mt-[-25%]" src={profilbild} alt="Milton Savander" />
       </motion.div>
     </div>
   );
