@@ -21,8 +21,8 @@ function App() {
       {/* hero */}
       <Hero />
       <AboutMe />
-      <AboutMe />
       <Technologies />
+      <AboutMe />
     </>
   );
 }
