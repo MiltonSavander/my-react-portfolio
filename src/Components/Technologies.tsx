@@ -1,15 +1,15 @@
-const icons = [
-  "css.svg",
-  "express.svg",
-  "git.svg",
-  "html.svg",
-  "javascript.svg",
-  "mongodb.svg",
-  "nodejs.svg",
-  "react_icon.svg",
-  "tailwind-css.svg",
-  "typescript.svg",
-];
+// const icons = [
+//   "css.svg",
+//   "express.svg",
+//   "git.svg",
+//   "html.svg",
+//   "javascript.svg",
+//   "mongodb.svg",
+//   "nodejs.svg",
+//   "react_icon.svg",
+//   "tailwind-css.svg",
+//   "typescript.svg",
+// ];
 
 const containerStyle =
   "size-20 flex items-center justify-center bg-myDarkLightBlue rounded-full";
