@@ -1,7 +1,3 @@
-import linkedin_icon from "../../assets/linkedin_icon.svg";
-import github_icon from "../../assets/github_icon.svg";
-import email_icon from "../../assets/email_icon.svg";
-
 const style =
   "size-12 bg-myDarkBlue rounded-full flex items-center justify-center cursor-pointer hover:mt-[-4px] hover:bg-myBlue transition-all ease-in-out";
 export const Linkedin_icon = () => {
