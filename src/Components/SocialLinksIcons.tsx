@@ -6,7 +6,7 @@ export const Linkedin_icon = () => {
       <div className={`${style}`}>
         <img
           className="size-10"
-          src="./public/assets/linkedin_icon.svg"
+          src="/assets/linkedin_icon.svg"
           alt="linkedin"
         />
       </div>
@@ -30,7 +30,7 @@ export const Email_icon = () => {
       <div className={`${style}`}>
         <img
           className="size-10"
-          src="../../public/assets/email_icon.svg"
+          src="/assets/email_icon.svg"
           alt="email_icon"
         />
       </div>

@@ -21,10 +21,7 @@ function Technologies() {
       <h1 className="font-bold text-lg ">Teknologier och Ramverk</h1>
       <div className="flex items-center justify-center ">
         <div className={`${containerStyle}`}>
-          <img
-            className={`${imgStyle}`}
-            src={`../../public/assets/techIcons/css.svg`}
-          />
+          <img className={`${imgStyle}`} src="/assets/techIcons/css.svg" />
         </div>
       </div>
     </div>
