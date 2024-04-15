@@ -18,11 +18,7 @@ export const Github_icon = () => {
   return (
     <div className="size-12">
       <div className={`${style}`}>
-        <img
-          className="size-10"
-          src="/public/assets/github_icon.svg"
-          alt="github"
-        />
+        <img className="size-10" src="/assets/github_icon.svg" alt="github" />
       </div>
     </div>
   );
