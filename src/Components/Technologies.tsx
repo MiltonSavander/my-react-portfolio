@@ -11,23 +11,21 @@ const icons = [
   "typescript.svg",
 ];
 
+const containerStyle =
+  "size-20 flex items-center justify-center bg-myDarkLightBlue rounded-full";
+const imgStyle = "w-[80%] h-[80%]";
+
 function Technologies() {
   return (
     <div className="h-screen flex flex-col items-center justify-center gap-4 ">
       <h1 className="font-bold text-lg ">Teknologier och Ramverk</h1>
       <div className="flex items-center justify-center ">
-        {icons.map((path) => (
-          <div
-            className="size-20 flex items-center justify-center bg-myDarkLightBlue rounded-full"
-            key={path}
-          >
-            <img
-              className="w-[80%] h-[80%]"
-              src={`assets/techIcons/${path}`}
-              alt={path}
-            />
-          </div>
-        ))}
+        <div className={`${containerStyle}`}>
+          <img
+            className={`${imgStyle}`}
+            src={`../../public/assets/techIcons/css.svg`}
+          />
+        </div>
       </div>
     </div>
   );

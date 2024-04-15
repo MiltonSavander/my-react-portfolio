@@ -80,7 +80,11 @@ export const Hero = () => {
         animate="visible"
         className="profile-container bg-gradient-to-tr from-myDarkBlue to-myBlue size-[200px] sm:size-[250px] md:size-[300px] lg:size-[350px] overflow-hidden"
       >
-        <img className="mt-[-25%]" src={profilbild} alt="Milton Savander" />
+        <img
+          className="mt-[-25%]"
+          src="../../public/assets/profilbild-no-background.png"
+          alt="Milton Savander"
+        />
       </motion.div>
     </div>
   );
