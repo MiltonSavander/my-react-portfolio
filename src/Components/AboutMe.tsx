@@ -6,7 +6,7 @@ function AboutMe() {
     <div className="h-screen flex items-center justify-center">
       <div className="flex justify-center items-center flex-col-reverse md:flex-row">
         <div>
-          <h1 className="font-bold text-3xl">om mig</h1>
+          <h1 className="font-bold text-3xl">Om mig</h1>
           <div className="w-[300px] md:w-[400px] lg:w-[500px]">
             <p className="text-md md:text-base lg:text-lg ">
               Låt mig introducera mig själv och det som driver mig! Jag är en
