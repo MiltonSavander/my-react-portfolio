@@ -5,6 +5,7 @@ import { Hero } from "./Hero";
 import SocialLinks from "./SocialLinks";
 import AboutMe from "./AboutMe";
 import Technologies from "./Technologies";
+import ProjectComponents from "./ProjectComponents";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -22,6 +23,8 @@ function App() {
       <Hero />
       <AboutMe />
       <Technologies />
+
+      <ProjectComponents />
       <AboutMe />
     </>
   );

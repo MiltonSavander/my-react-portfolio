@@ -12,16 +12,16 @@ const iconsData = [
 ];
 
 const containerStyle =
-  "size-20 flex items-center justify-center bg-myDarkLightBlue rounded-full";
+  "size-20 flex items-center justify-center bg-myDarkLightBlue rounded-full transition-all";
 const imgStyle = "w-[70%] h-[70%]";
 
 function Technologies() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
+    <div className="flex flex-col items-center justify-center gap-4 mb-10">
       <h1 className="font-bold text-2xl ">
         Teknologier och ramverk jag använder
       </h1>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-4 ">
         {iconsData.map((icon) => {
           return (
             <div key={icon.name}>
