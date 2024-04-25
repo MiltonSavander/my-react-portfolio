@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { scrollToSection } from "./Navbar";
 
 export const Hero = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
 
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
+  };
+
+  const handleButtonClick = () => {
+    scrollToSection("projekt");
   };
 
   const textVariants = {
@@ -64,9 +69,10 @@ export const Hero = () => {
         <motion.button
           variants={textVariants}
           onAnimationComplete={handleAnimationComplete}
+          onClick={handleButtonClick}
           className={`w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl ${
             animationComplete
-              ? "hover:border-myBlue hover:text-myBlue hover:rounded-2xl transition-all "
+              ? "hover:border-myHover hover:text-myHover hover:cursor-pointer hover:rounded-2xl transition-all "
               : ""
           }`}
         >

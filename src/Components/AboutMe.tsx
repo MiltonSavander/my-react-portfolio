@@ -3,7 +3,7 @@ import animationData from "../../public/assets/animation.json";
 
 function AboutMe() {
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div id="om-mig" className=" flex items-center justify-center mb-40">
       <div className="flex justify-center items-center flex-col-reverse md:flex-row">
         <div>
           <h1 className="font-bold text-3xl">Om mig</h1>

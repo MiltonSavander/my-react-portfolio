@@ -6,6 +6,10 @@ import SocialLinks from "./SocialLinks";
 import AboutMe from "./AboutMe";
 import Technologies from "./Technologies";
 import ProjectComponents from "./ProjectComponents";
+import CTA from "./CTA";
+
+import Background from "./Background";
+import Footer from "./Footer";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -14,6 +18,7 @@ function App() {
 
   return (
     <>
+      <Background />
       {/* navbar */}
       <MobileNav nav={nav} closeNav={closeNav} />
       <Navbar openNav={openNav} />
@@ -25,7 +30,8 @@ function App() {
       <Technologies />
 
       <ProjectComponents />
-      <AboutMe />
+      <CTA />
+      <Footer />
     </>
   );
 }

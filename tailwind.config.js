@@ -9,6 +9,7 @@ export default {
       colors: {
         myLightBlue: '#F9F7F7',
         myDarkLightBlue: '#DBE2EF',
+        myHover: '#1e4f88',
         myBlue: '#3F72AF',
         myDarkBlue: '#112D4E'
       }
