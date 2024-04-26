@@ -24,7 +24,10 @@ function Technologies() {
       <div className="flex flex-wrap mx-14 items-center justify-center gap-4 ">
         {iconsData.map((icon) => {
           return (
-            <div key={icon.name}>
+            <div
+              key={icon.name}
+              className="flex flex-col justify-center items-center"
+            >
               <h1 className="text-center font-bold text-sm sm:text-base md:text-lg lg:text-xl">
                 {icon.name}
               </h1>
