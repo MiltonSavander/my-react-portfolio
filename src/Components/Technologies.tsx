@@ -21,7 +21,7 @@ function Technologies() {
       <h1 className="font-bold sm:text-xl md:text-2xl lg:text-3xl ">
         Teknologier och ramverk jag använder
       </h1>
-      <div className="flex flex-wrap items-center justify-center gap-4 ">
+      <div className="flex flex-wrap mx-14 items-center justify-center gap-4 ">
         {iconsData.map((icon) => {
           return (
             <div key={icon.name}>
