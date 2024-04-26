@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+
 import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 import { Hero } from "./Hero";
@@ -7,7 +9,6 @@ import AboutMe from "./AboutMe";
 import Technologies from "./Technologies";
 import ProjectComponents from "./ProjectComponents";
 import CTA from "./CTA";
-
 import Background from "./Background";
 import Footer from "./Footer";
 

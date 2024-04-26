@@ -8,12 +8,14 @@ body {
 
 @layer components {
   .nav-link {
-    @apply relative font-semibold text-myDarkLightBlue hover:text-myLightBlue cursor-pointer text-[17px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-myDarkBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
+    @apply tracking-wide relative font-semibold text-myDarkLightBlue hover:text-myLightBlue cursor-pointer text-[17px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-myDarkBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
   }
 
   .nav-link-mobile {
-    @apply relative mb-[2rem] font-semibold text-myDarkLightBlue hover:text-myLightBlue cursor-pointer text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-myDarkBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    @apply tracking-wide relative mb-[2rem] font-semibold text-myDarkLightBlue hover:text-myLightBlue cursor-pointer text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-myDarkBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
   }
+
+  .cta-button {}
 
 }
 

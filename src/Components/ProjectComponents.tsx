@@ -29,19 +29,27 @@ function ProjectComponents() {
         </div>
         <div className="flex w-[260px] sm:w-[400px]  flex-col justify-center items-center ">
           <div className=" my-[30px] ">
-            <img
-              className=""
-              src="/assets/spotify-preveiw.png"
-              alt="spotify-preveiw"
-            />
+            <img src="/assets/spotify-preveiw.png" alt="spotify-preveiw" />
           </div>
           <div className="flex w-full items-center justify-around">
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              Github
-            </div>
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              demo
-            </div>
+            <a
+              href="https://github.com/MiltonSavander/tsm-spotify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                Github
+              </div>
+            </a>
+            <a
+              href="https://spotify-klon-three.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                demo
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -65,19 +73,27 @@ function ProjectComponents() {
         </div>
         <div className="flex w-[260px] sm:w-[400px]  flex-col justify-center items-center ">
           <div className=" my-[30px] ">
-            <img
-              className=""
-              src="/assets/flaggapp-preveiw.png"
-              alt="spotify-preveiw"
-            />
+            <img src="/assets/flaggapp-preveiw.png" alt="spotify-preveiw" />
           </div>
           <div className="flex w-full items-center justify-around">
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              Github
-            </div>
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              demo
-            </div>
+            <a
+              href="https://github.com/MiltonSavander/flag-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                Github
+              </div>
+            </a>
+            <a
+              href="https://flag-app-sigma.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                demo
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -109,12 +125,24 @@ function ProjectComponents() {
             />
           </div>
           <div className="flex w-full items-center justify-around">
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              Github
-            </div>
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              demo
-            </div>
+            <a
+              href="https://github.com/MiltonSavander/klarna-checkout"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                Github
+              </div>
+            </a>
+            <a
+              href="https://klarna-checkout-nine.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                demo
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -148,12 +176,24 @@ function ProjectComponents() {
             />
           </div>
           <div className="flex w-full items-center justify-around">
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              Github
-            </div>
-            <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
-              demo
-            </div>
+            <a
+              href="https://github.com/MiltonSavander/losenordsgenerator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                Github
+              </div>
+            </a>
+            <a
+              href="https://losenordsgenerator.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                demo
+              </div>
+            </a>
           </div>
         </div>
       </div>

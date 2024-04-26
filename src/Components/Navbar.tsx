@@ -39,6 +39,13 @@ const Navbar = ({ openNav }: Props) => {
           <div className="nav-link" onClick={() => scrollToSection("kontakta")}>
             KONTAKTA
           </div>
+          <a
+            href="https://drive.google.com/file/d/12AOfdFtJ1YP9W8w_MGIAbpkQrA_Ng8Au/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="nav-link">CV</div>
+          </a>
           <div
             className="w-[2rem] lg:hidden h-[2rem] cursor-pointer text-myDarkBlue"
             onClick={openNav}

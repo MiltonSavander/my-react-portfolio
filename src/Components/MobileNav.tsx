@@ -12,9 +12,9 @@ const MobileNav = ({ nav, closeNav }: Props) => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (sectionId === "hem") {
-      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } else if (section) {
-      const offset = section.offsetTop - 120; // Adjust this offset as needed
+      const offset = section.offsetTop - 120;
       window.scrollTo({ top: offset, behavior: "smooth" });
     }
   };
@@ -60,6 +60,13 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         >
           KONTAKTA
         </div>
+        <a
+          href="https://drive.google.com/file/d/12AOfdFtJ1YP9W8w_MGIAbpkQrA_Ng8Au/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="nav-link-mobile">CV</div>
+        </a>
         <div className="flex gap-4">
           <Linkedin_icon />
           <Github_icon />
