@@ -3,7 +3,7 @@ import { IoMail } from "react-icons/io5";
 import { scrollToSection } from "./Navbar";
 
 function Footer() {
-  const handleButtonClick = (section) => {
+  const handleButtonClick = (section: string) => {
     scrollToSection(section);
   };
 
