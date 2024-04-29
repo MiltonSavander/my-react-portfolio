@@ -6,6 +6,8 @@ body {
   @apply bg-myLightBlue text-myDarkBlue
 }
 
+
+
 @layer components {
   .nav-link {
     @apply tracking-wide relative font-semibold text-myDarkLightBlue hover:text-myLightBlue cursor-pointer text-[17px] w-fit lg:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-myDarkBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;

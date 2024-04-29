@@ -26,7 +26,7 @@ function Technologies() {
           return (
             <div
               key={icon.name}
-              className="flex flex-col justify-center items-center"
+              className="flex flex-col justify-center items-center min-w-[91px]"
             >
               <h1 className="text-center font-bold text-sm sm:text-base md:text-lg lg:text-xl">
                 {icon.name}
