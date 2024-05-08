@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { scrollToSection } from "./Navbar";
+import { LanguageContext } from "./App";
 
 export const Hero = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
+  const { english } = useContext(LanguageContext);
 
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
@@ -58,13 +60,13 @@ export const Hero = () => {
           variants={textVariants}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
         >
-          MERN stack
+          {english ? "MERN stack" : "MERN stack"}
         </motion.h2>
         <motion.h2
           variants={textVariants}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
         >
-          webbutvecklare
+          {english ? "web developer" : "webbutvecklare"}
         </motion.h2>
         <motion.button
           variants={textVariants}
@@ -76,7 +78,7 @@ export const Hero = () => {
               : ""
           }`}
         >
-          PROJEKT
+          {english ? "PROJECTS" : "PROJEKT"}
         </motion.button>
       </motion.div>
       <motion.div

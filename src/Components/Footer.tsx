@@ -1,8 +1,11 @@
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { scrollToSection } from "./Navbar";
+import { LanguageContext } from "./App";
+import { useContext } from "react";
 
 function Footer() {
+  const { english } = useContext(LanguageContext);
   const handleButtonClick = (section: string) => {
     scrollToSection(section);
   };
@@ -11,32 +14,36 @@ function Footer() {
     <footer className="bg-myDarkLightBlue flex flex-col justify-center items-center gap-6">
       <div className="flex flex-col md:flex-row pt-4 gap-4 md:gap-14">
         <div className="max-w-[300px] ">
-          <h1 className="font-bold text-lg">Milton savander</h1>
+          <h1 className="font-bold text-lg">
+            {english ? "Milton savander" : "Milton Savander"}
+          </h1>
           <p>
-            Webbutvecklare med erfarenhet inom både front-end och back-end.
-            Starka färdigheter inom design och kodning för att hantera olika
-            projekt och utmaningar.
+            {english
+              ? "Web developer with experience in both front-end and back-end. Strong skills in design and coding to handle various projects and challenges."
+              : "Webbutvecklare med erfarenhet inom både front-end och back-end. Starka färdigheter inom design och kodning för att hantera olika projekt och utmaningar."}
           </p>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-bold text-lg">Navigera</h1>
+          <h1 className="font-bold text-lg">
+            {english ? "Navigate" : "Navigera"}
+          </h1>
           <div
             className="cursor-pointer underline"
             onClick={() => handleButtonClick("hem")}
           >
-            Hem
+            {english ? "Home" : "Hem"}
           </div>
           <div
             className="cursor-pointer underline"
             onClick={() => handleButtonClick("om-mig")}
           >
-            Om Mig
+            {english ? "About Me" : "Om Mig"}
           </div>
           <div
             className="cursor-pointer underline"
             onClick={() => handleButtonClick("projekt")}
           >
-            Projekt
+            {english ? "Projects" : "Projekt"}
           </div>
           <a
             className="underline"
@@ -44,11 +51,13 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            CV
+            {english ? "Resume" : "CV"}
           </a>
         </div>
         <div className=" flex flex-col gap-1">
-          <h1 className="font-bold text-lg">Kontakta</h1>
+          <h1 className="font-bold text-lg">
+            {english ? "Contact" : "Kontakta"}
+          </h1>
           <a href="mailto:milton.savander@gmail.com" target="_blank">
             <div className="flex justify-start items-center gap-1">
               <IoMail />

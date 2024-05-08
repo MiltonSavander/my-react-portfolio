@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { LanguageContext } from "./App";
+
 const iconsData = [
   { name: "css", src: "css.svg" },
   { name: "express", src: "express.svg" },
@@ -16,10 +19,13 @@ const containerStyle =
 const imgStyle = "w-[70%] h-[70%]";
 
 function Technologies() {
+  const { english } = useContext(LanguageContext);
   return (
     <div className="flex flex-col items-center justify-center gap-4 mb-40">
       <h1 className="font-bold sm:text-xl md:text-2xl lg:text-3xl ">
-        Teknologier och ramverk jag använder
+        {english
+          ? "Technologies and frameworks I use"
+          : "Teknologier och ramverk jag använder"}
       </h1>
       <div className="flex flex-wrap mx-14 items-center justify-center gap-4 ">
         {iconsData.map((icon) => {

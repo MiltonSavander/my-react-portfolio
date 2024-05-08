@@ -1,5 +1,7 @@
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import { Linkedin_icon, Github_icon, Email_icon } from "./SocialLinksIcons";
+import { useContext } from "react";
+import { LanguageContext } from "./App";
 
 interface Props {
   nav: boolean;
@@ -7,6 +9,7 @@ interface Props {
 }
 
 const MobileNav = ({ nav, closeNav }: Props) => {
+  const { english } = useContext(LanguageContext);
   const navAnimation = nav ? "renslate-x-0" : "translate-x-[-100%]";
 
   const scrollToSection = (sectionId: string) => {
@@ -21,9 +24,9 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 
   return (
     <div
-      className={`fixed ${navAnimation} transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[10000] bg-gradient-to-b from-myBlue to-myDarkBlue`}
+      className={`fixed ${navAnimation} top-0 left-0 right-0 bottom-0 z-[10000] bg-gradient-to-b from-myBlue to-myDarkBlue transform transition-all duration-300`}
     >
-      <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
+      <div className="w-full h-full flex flex-col items-center justify-center">
         <div
           className="nav-link-mobile"
           onClick={() => {
@@ -31,7 +34,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
             closeNav();
           }}
         >
-          HEM
+          {english ? "HOME" : "HEM"}
         </div>
         <div
           className="nav-link-mobile"
@@ -40,7 +43,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
             closeNav();
           }}
         >
-          OM MIG
+          {english ? "ABOUT ME" : "OM MIG"}
         </div>
         <div
           className="nav-link-mobile"
@@ -49,7 +52,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
             closeNav();
           }}
         >
-          PROJECT
+          {english ? "PROJECTS" : "PROJEKT"}
         </div>
         <div
           className="nav-link-mobile"
@@ -58,14 +61,14 @@ const MobileNav = ({ nav, closeNav }: Props) => {
             closeNav();
           }}
         >
-          KONTAKTA
+          {english ? "CONTACT" : "KONTAKTA"}
         </div>
         <a
           href="https://drive.google.com/file/d/12AOfdFtJ1YP9W8w_MGIAbpkQrA_Ng8Au/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="nav-link-mobile">CV</div>
+          <div className="nav-link-mobile">{english ? "RESUME" : "CV"}</div>
         </a>
         <div className="flex gap-4">
           <Linkedin_icon />

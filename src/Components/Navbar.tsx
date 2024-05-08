@@ -1,4 +1,6 @@
 import { Bars3Icon } from "@heroicons/react/20/solid";
+import { useContext } from "react";
+import { LanguageContext } from "./App";
 
 interface Props {
   openNav: () => void;
@@ -15,6 +17,12 @@ export const scrollToSection = (sectionId: string) => {
 };
 
 const Navbar = ({ openNav }: Props) => {
+  const { english, setEnglish } = useContext(LanguageContext);
+
+  const handleOnclick = () => {
+    setEnglish((prevState) => !prevState);
+  };
+
   return (
     <nav className="fixed z-50 top-4 left-4 right-4 mx-auto max-w-[1400px] rounded-2xl h-[90px] bg-myBlue py-4 bg-opacity-90 bg-clip-padding backdrop-blur-sm ">
       <div className="flex items-center justify-between w-[85%] h-full mx-auto">
@@ -28,24 +36,39 @@ const Navbar = ({ openNav }: Props) => {
         </div>
         <div className="flex items-center gap-8">
           <div className="nav-link" onClick={() => scrollToSection("hem")}>
-            HEM
+            {english ? "HOME" : "HEM"}
           </div>
           <div className="nav-link" onClick={() => scrollToSection("om-mig")}>
-            OM MIG
+            {english ? "ABOUT ME" : "OM MIG"}
           </div>
           <div className="nav-link" onClick={() => scrollToSection("projekt")}>
-            PROJEKT
+            {english ? "PROJECTS" : "PROJEKT"}
           </div>
           <div className="nav-link" onClick={() => scrollToSection("kontakta")}>
-            KONTAKTA
+            {english ? "CONTACT" : "KONTAKTA"}
           </div>
           <a
             href="https://drive.google.com/file/d/12AOfdFtJ1YP9W8w_MGIAbpkQrA_Ng8Au/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="nav-link">CV</div>
+            <div className="nav-link">{english ? "RESUME" : "CV"}</div>
           </a>
+          <div className="flag-container size-10 cursor-pointer">
+            {english ? (
+              <img
+                onClick={handleOnclick}
+                src="/assets/flag-sweden.svg"
+                alt="flag-sweden"
+              />
+            ) : (
+              <img
+                onClick={handleOnclick}
+                src="/assets/flag-united-kingdom.svg"
+                alt="flag-united-kingdom"
+              />
+            )}
+          </div>
           <div
             className="w-[2rem] lg:hidden h-[2rem] cursor-pointer text-myDarkBlue"
             onClick={openNav}

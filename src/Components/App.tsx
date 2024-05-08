@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
 
 import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
@@ -12,27 +11,31 @@ import CTA from "./CTA";
 import Background from "./Background";
 import Footer from "./Footer";
 
+export const LanguageContext = React.createContext();
+
 function App() {
   const [nav, setNav] = useState(false);
   const openNav = () => setNav(true);
   const closeNav = () => setNav(false);
+  const [english, setEnglish] = useState(false);
 
   return (
     <>
-      <Background />
-      {/* navbar */}
-      <MobileNav nav={nav} closeNav={closeNav} />
-      <Navbar openNav={openNav} />
-      {/* social links */}
-      <SocialLinks />
-      {/* hero */}
-      <Hero />
-      <AboutMe />
-      <Technologies />
-
-      <ProjectComponents />
-      <CTA />
-      <Footer />
+      <LanguageContext.Provider value={{ english, setEnglish }}>
+        <Background />
+        {/* navbar */}
+        <MobileNav nav={nav} closeNav={closeNav} />
+        <Navbar openNav={openNav} />
+        {/* social links */}
+        <SocialLinks />
+        {/* hero */}
+        <Hero />
+        <AboutMe />
+        <Technologies />
+        <ProjectComponents />
+        <CTA />
+        <Footer />
+      </LanguageContext.Provider>
     </>
   );
 }
