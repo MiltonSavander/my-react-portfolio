@@ -6,6 +6,11 @@ interface Props {
   openNav: () => void;
 }
 
+interface LanguageContextType {
+  english: boolean;
+  setEnglish: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 export const scrollToSection = (sectionId: string) => {
   const section = document.getElementById(sectionId);
   if (sectionId === "hem") {
@@ -17,9 +22,10 @@ export const scrollToSection = (sectionId: string) => {
 };
 
 const Navbar = ({ openNav }: Props) => {
-  const { english, setEnglish } = useContext(LanguageContext);
+  const { english, setEnglish } =
+    useContext<LanguageContextType>(LanguageContext);
 
-  const handleOnclick = () => {
+  const handleLanguageToggle = () => {
     setEnglish((prevState) => !prevState);
   };
 
@@ -57,13 +63,13 @@ const Navbar = ({ openNav }: Props) => {
           <div className="flag-container size-10 cursor-pointer">
             {english ? (
               <img
-                onClick={handleOnclick}
+                onClick={handleLanguageToggle}
                 src="/assets/flag-sweden.svg"
                 alt="flag-sweden"
               />
             ) : (
               <img
-                onClick={handleOnclick}
+                onClick={handleLanguageToggle}
                 src="/assets/flag-united-kingdom.svg"
                 alt="flag-united-kingdom"
               />

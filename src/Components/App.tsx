@@ -11,7 +11,10 @@ import CTA from "./CTA";
 import Background from "./Background";
 import Footer from "./Footer";
 
-export const LanguageContext = React.createContext();
+export const LanguageContext = React.createContext<{
+  english: boolean;
+  setEnglish: React.Dispatch<React.SetStateAction<boolean>>;
+}>({ english: false, setEnglish: () => {} });
 
 function App() {
   const [nav, setNav] = useState(false);
