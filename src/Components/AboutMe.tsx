@@ -10,7 +10,9 @@ function AboutMe() {
     <div id="om-mig" className=" flex items-center justify-center mb-40">
       <div className="flex justify-center items-center flex-col-reverse md:flex-row">
         <div>
-          <h1 className="font-bold text-3xl">Om mig</h1>
+          <h1 className="font-bold text-3xl">
+            {english ? "About Me" : "Om mig"}
+          </h1>
           <div className="w-[300px] md:w-[400px] h-[300px] lg:w-[500px]">
             <p className="text-md md:text-base lg:text-lg ">
               {english ? (
