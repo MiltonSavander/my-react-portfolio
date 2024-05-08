@@ -60,7 +60,7 @@ export const Hero = () => {
           variants={textVariants}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
         >
-          {english ? "MERN stack" : "MERN stack"}
+          MERN Stack
         </motion.h2>
         <motion.h2
           variants={textVariants}
