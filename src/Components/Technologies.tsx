@@ -2,16 +2,17 @@ import { useContext } from "react";
 import { LanguageContext } from "./App";
 
 const iconsData = [
-  { name: "css", src: "css.svg" },
-  { name: "express", src: "express.svg" },
-  { name: "git", src: "git.svg" },
-  { name: "html", src: "html.svg" },
-  { name: "javascript", src: "javascript.svg" },
-  { name: "mongo db", src: "mongodb.svg" },
-  { name: "nodejs", src: "nodejs.svg" },
-  { name: "react", src: "react_icon.svg" },
-  { name: "tailwind css", src: "tailwind-css.svg" },
-  { name: "typescript", src: "typescript.svg" },
+  { name: "Css", src: "css.svg" },
+  { name: "Express", src: "express.svg" },
+  { name: "Git", src: "git.svg" },
+  { name: "Html", src: "html.svg" },
+  { name: "Javascript", src: "javascript.svg" },
+  { name: "MongoDB", src: "mongodb.svg" },
+  { name: "Node.js", src: "nodejs.svg" },
+  { name: "React", src: "react_icon.svg" },
+  { name: "Tailwind", src: "tailwind-css.svg" },
+  { name: "Typescript", src: "typescript.svg" },
+  { name: "Next.js", src: "nextjs.svg" },
 ];
 
 const containerStyle =
@@ -23,9 +24,7 @@ function Technologies() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 mb-40">
       <h1 className="font-bold sm:text-xl md:text-2xl lg:text-3xl ">
-        {english
-          ? "Technologies and frameworks I use"
-          : "Teknologier och ramverk jag använder"}
+        {english ? "Technologies and frameworks I use" : "Teknologier och ramverk jag använder"}
       </h1>
       <div className="flex flex-wrap mx-14 items-center justify-center gap-4 ">
         {iconsData.map((icon) => {

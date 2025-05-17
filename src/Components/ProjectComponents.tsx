@@ -6,7 +6,10 @@ function ProjectComponents() {
   return (
     <div className="flex flex-col gap-8 items-center justify-center mb-10">
       <div className="mt-4 flex items-center justify-center gap-8">
-        <h1 id="projekt" className="font-bold text-2xl md:text-3xl ">
+        <h1
+          id="projekt"
+          className="font-bold text-2xl md:text-3xl "
+        >
           {english ? "Projects" : "Projekt"}
         </h1>
       </div>
@@ -19,28 +22,34 @@ function ProjectComponents() {
             </h1>
             <p className="mb-4 text-sm sm:text-base">
               {english ? (
-                "I created a Spotify clone focusing on providing a user-friendly experience for both mobile and desktop. Using React and Material UI, I integrated the Spotify API to allow users to play music and explore their personal playlists directly from the browser. The result is a smooth and responsive platform for music enthusiasts to enjoy their favorite tunes wherever they are."
+                <>
+                  I built a Spotify clone with the goal of creating a smooth and user-friendly
+                  experience on both mobile and desktop. Using React and Material UI, I integrated
+                  the app with Spotify’s API, allowing users to play music and browse their personal
+                  playlists directly in the browser. The result is a responsive music player that
+                  makes it easy to listen, no matter where you are.
+                </>
               ) : (
                 <>
-                  Jag skapade en Spotify-klon med fokus på att erbjuda en
-                  användarvänlig upplevelse både för mobila enheter och desktop.
-                  Genom att använda React och Material UI integrerade jag
-                  Spotify API för att låta användare spela musik och utforska
-                  sina personliga spellistor direkt från webbläsaren. Resultatet
-                  är en smidig och responsiv plattform för musikentusiaster att
-                  njuta av sina favoritlåtar var de än är.
+                  Jag byggde en Spotify-klon med målet att skapa en smidig och användarvänlig
+                  upplevelse, både på mobil och desktop. Med hjälp av React och Material UI kopplade
+                  jag ihop appen med Spotifys API, så att användare kan spela musik och bläddra i
+                  sina egna spellistor direkt i webbläsaren. Det blev en responsiv musikspelare som
+                  gör det enkelt att lyssna, oavsett var man är.
                 </>
               )}
             </p>
           </div>
           <div className="font-bold text-sm sm:text-base">
-            Html | React | CSS | Material UI | Spotify API | Spotify Playback
-            SDK
+            Html | React | CSS | Material UI | Spotify API | Spotify Playback SDK
           </div>
         </div>
         <div className="flex w-[260px] sm:w-[400px]  flex-col justify-center items-center ">
           <div className="my-[30px]">
-            <img src="/assets/spotify-preveiw.png" alt="spotify-preveiw" />
+            <img
+              src="/assets/spotify-preveiw.png"
+              alt="spotify-preveiw"
+            />
           </div>
           <div className="flex w-full items-center justify-around">
             <a
@@ -73,17 +82,20 @@ function ProjectComponents() {
             </h1>
             <p className="mb-4 text-sm sm:text-base">
               {english ? (
-                "I developed a flag app using a REST Countries API and implemented it with React, Material UI, and CSS. Users can browse flags from around the world and get detailed information about different countries' currencies, populations, and capitals. By combining sleek design with useful functionality, the app offers an engaging and educational experience for users exploring the world's diversity."
+                <>
+                  A web-based flag app that displays flags from around the world and fetches data
+                  via the REST Countries API. Built with React, Material UI, and custom CSS, it
+                  offers a clear and easy-to-navigate interface where users can explore countries’
+                  flags, capitals, currencies, and population data. The goal was to combine simple
+                  design with relevant content to create a good user experience.
+                </>
               ) : (
                 <>
-                  Jag utvecklade en flaggapp som använder en REST Countries API
-                  och implementerade den med React, Material UI och CSS.
-                  Användare kan bläddra bland flaggor från hela världen och få
-                  detaljerad information om olika länders valutor, invånarantal
-                  och huvudstäder. Genom att kombinera stilren design med
-                  användbar funktionalitet, erbjuder appen en engagerande och
-                  lärorik upplevelse för användare som utforskar världens
-                  mångfald.
+                  En webbaserad flaggapp som visar flaggor från hela världen och hämtar information
+                  via REST Countries API. Med React, Material UI och egen CSS skapades en tydlig och
+                  lättnavigerad lösning där användare kan upptäcka länders flaggor, huvudstäder,
+                  valutor och befolkningsdata. Målet var att kombinera enkel design med relevant
+                  innehåll för en bra användarupplevelse.
                 </>
               )}
             </p>
@@ -94,7 +106,10 @@ function ProjectComponents() {
         </div>
         <div className="flex w-[260px] sm:w-[400px]  flex-col justify-center items-center ">
           <div className="my-[30px]">
-            <img src="/assets/flaggapp-preveiw.png" alt="spotify-preveiw" />
+            <img
+              src="/assets/flaggapp-preveiw.png"
+              alt="spotify-preveiw"
+            />
           </div>
           <div className="flex w-full items-center justify-around">
             <a
@@ -123,38 +138,46 @@ function ProjectComponents() {
         <div className="md:w-[600px]  flex flex-col justify-between">
           <div>
             <h1 className="font-bold text-2xl md:text-3xl mb-4 ">
-              {english ? "Klarna Checkout" : "Klarna checkout"}
+              {english ? "Promptopia" : "Promptopia"}
             </h1>
             <p className="mb-4 text-sm sm:text-base">
               {english ? (
-                "I created a backend project with a simple store using the Fake Store API. By integrating Klarna's checkout, I could offer a seamless payment experience for customers. By entering their details, customers could complete the payment directly through Klarna, increasing both convenience and reliability for the purchasing experience."
+                <>
+                  A platform for sharing useful AI prompts with others, built using Next.js and
+                  MongoDB. The app uses Next.js built-in routing and NextAuth to manage
+                  authentication and user accounts, including support for Google profiles and
+                  profile pictures. Users can explore and filter prompts by tags or usernames,
+                  making it easy to find relevant content. The goal was to create a functional and
+                  user-friendly service that makes it simple to share and discover AI ideas.
+                </>
               ) : (
                 <>
-                  Jag skapade ett backend-projekt med en enkel butik som
-                  använder Fake Store API. Genom att integrera Klarnas checkout
-                  kunde jag erbjuda en sömlös betalningsupplevelse för kunderna.
-                  Genom att skriva in sina uppgifter kunde kunderna genomföra
-                  betalningen direkt genom Klarna, vilket ökar både
-                  bekvämligheten och tillförlitligheten för köpupplevelsen.
+                  En plattform för att dela användbara AI-prompts med andra, byggd med Next.js och
+                  MongoDB. Appen använder Next.js inbyggda routing och NextAuth för att hantera
+                  inloggning och användarkonton, inklusive möjligheten att använda exempelvis
+                  Google-profiler och profilbilder. Användare kan utforska och filtrera prompts
+                  baserat på taggar eller användarnamn, vilket gör det enkelt att hitta relevant
+                  innehåll. Målet har varit att skapa en funktionell och lättanvänd tjänst som gör
+                  det smidigt att dela och upptäcka AI-idéer.
                 </>
               )}
             </p>
           </div>
           <div className="font-bold text-sm sm:text-base">
-            Node.js | Express | Klarna API | Fake Store API{" "}
+            Next.js | NextAuth | MongoDB | Tailwind
           </div>
         </div>
         <div className="flex w-[260px] sm:w-[400px]  flex-col justify-center items-center ">
           <div className="my-[30px]">
             <img
               className=""
-              src="/assets/klarna-checkout-preveiw.png"
+              src="/assets/Promptopia-preview.png"
               alt="spotify-preveiw"
             />
           </div>
           <div className="flex w-full items-center justify-around">
             <a
-              href="https://github.com/MiltonSavander/klarna-checkout"
+              href="https://github.com/MiltonSavander/promptopia"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -163,7 +186,7 @@ function ProjectComponents() {
               </div>
             </a>
             <a
-              href="https://klarna-checkout-nine.vercel.app/"
+              href="https://promptopia-ruby-ten.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -178,41 +201,41 @@ function ProjectComponents() {
         <div className="md:w-[600px]  flex flex-col justify-between">
           <div>
             <h1 className="font-bold text-2xl md:text-3xl mb-4 ">
-              {english ? "Password Generator" : "Lösenordsgenerator"}
+              {english ? "Interactive Comments" : "Interaktiva kommentarer"}
             </h1>
             <p className="mb-4 text-sm sm:text-base">
               {english ? (
-                "I developed a password generator that allows users to create customized passwords according to their preferences. With the ability to choose between including numbers, lowercase or uppercase letters, and special characters, as well as specifying the length of the password, users can create unique and secure passwords. Additionally, the tool provides a strength assessment that gives users insight into how robust their password is, helping to ensure a high level of security for their accounts and data."
+                <>
+                  A small forum where users can write posts, reply to others, and upvote content.
+                  The app shows which user is logged in, allowing you to edit or delete your own
+                  posts and replies. Each post can be upvoted, and the ones with the highest ratings
+                  are automatically shown at the top of the feed. The design is responsive and
+                  optimized to work well on both mobile and desktop.
+                </>
               ) : (
                 <>
-                  Jag utvecklade en lösenordsgenerator som ger användarna
-                  möjlighet att skapa anpassade lösenord enligt deras
-                  preferenser. Med möjlighet att välja mellan att inkludera
-                  nummer, små eller stora bokstäver, och specialtecken, samt att
-                  ange längden på lösenordet, kan användare skapa unika och
-                  säkra lösenord. Dessutom erbjuder verktyget en styrkebedömning
-                  som ger användarna insikt i hur robust deras lösenord är,
-                  vilket hjälper till att säkerställa en hög nivå av säkerhet
-                  för deras konton och data.
+                  Ett litet forum där användare kan skriva inlägg, svara på varandra och rösta upp
+                  innehåll. Appen visar vem du är inloggad som, vilket gör det möjligt att redigera
+                  eller ta bort egna inlägg och svar. Varje post kan röstas upp, och inlägg med
+                  högst betyg visas automatiskt högst upp i flödet. Designen är responsiv och
+                  anpassad för att fungera bra på både mobil och desktop.
                 </>
               )}
             </p>
           </div>
-          <div className="font-bold text-sm sm:text-base">
-            Html | CSS | Javascript
-          </div>
+          <div className="font-bold text-sm sm:text-base">React | Tailwind | Javascript</div>
         </div>
         <div className="flex w-[260px] sm:w-[400px]  flex-col justify-center items-center ">
           <div className=" my-[30px] ">
             <img
               className=""
-              src="/assets/lösenordsgenerator-preveiw.png"
+              src="/assets/Interactive-comment-preview.png"
               alt="spotify-preveiw"
             />
           </div>
           <div className="flex w-full items-center justify-around">
             <a
-              href="https://github.com/MiltonSavander/losenordsgenerator"
+              href="https://github.com/MiltonSavander/interactive-comments"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -221,7 +244,7 @@ function ProjectComponents() {
               </div>
             </a>
             <a
-              href="https://losenordsgenerator.vercel.app/"
+              href="https://interactive-comments-black.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
