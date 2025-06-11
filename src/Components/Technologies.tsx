@@ -13,6 +13,7 @@ const iconsData = [
   { name: "Tailwind", src: "tailwind-css.svg" },
   { name: "Typescript", src: "typescript.svg" },
   { name: "Next.js", src: "nextjs.svg" },
+  { name: "MySQL", src: "mysql.svg" },
 ];
 
 const containerStyle =
