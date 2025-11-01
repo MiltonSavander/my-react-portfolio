@@ -22,9 +22,7 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col">
-          <h1 className="font-bold text-lg">
-            {english ? "Navigate" : "Navigera"}
-          </h1>
+          <h1 className="font-bold text-lg">{english ? "Navigate" : "Navigera"}</h1>
           <div
             className="cursor-pointer underline"
             onClick={() => handleButtonClick("hem")}
@@ -53,10 +51,11 @@ function Footer() {
           </a>
         </div>
         <div className=" flex flex-col gap-1">
-          <h1 className="font-bold text-lg">
-            {english ? "Contact" : "Kontakta"}
-          </h1>
-          <a href="mailto:milton.savander@gmail.com" target="_blank">
+          <h1 className="font-bold text-lg">{english ? "Contact" : "Kontakta"}</h1>
+          <a
+            href="mailto:milton.savander@gmail.com"
+            target="_blank"
+          >
             <div className="flex justify-start items-center gap-1">
               <IoMail />
               <p>milton.savander@gmail.com</p>
@@ -81,7 +80,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <p className="p-2">&copy; 2024 - Milton Savander</p>
+        <p className="p-2">&copy; 2025 - Milton Savander</p>
       </div>
     </footer>
   );

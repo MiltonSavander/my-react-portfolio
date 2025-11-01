@@ -74,6 +74,67 @@ function ProjectComponents() {
         </div>
       </div>
 
+      <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-around md:w-[800px] xl:w-[1000px] md:h-[400px] h-auto p-8 m-4 bg-myDarkLightBlue rounded-2xl gap-8 bg-opacity-90 bg-clip-padding backdrop-blur-sm ">
+        <div className="md:w-[600px]  flex flex-col justify-between">
+          <div>
+            <h1 className="font-bold text-2xl md:text-3xl mb-4 ">
+              {english ? "Weather Dashboard" : "Weather Dashboard"}
+            </h1>
+            <p className="mb-4 text-sm sm:text-base">
+              {english ? (
+                <>
+                  A weather app built with Next.js and Tailwind CSS that uses geolocation to fetch
+                  the user's current position and display weather data through the Open-Meteo API.
+                  Users can also search for weather information in other cities or countries. The
+                  weather is shown in an hourly forecast with a graph and a daily forecast
+                  displaying the day's highest and lowest temperatures. The app supports both dark
+                  and light mode and features a responsive design for both large and small screens.
+                </>
+              ) : (
+                <>
+                  En väderapp byggd med Next.js och Tailwind CSS som använder geolocation för att
+                  hämta användarens aktuella position och visar vädret med hjälp av Open-Meteo API.
+                  Användaren kan även söka efter väder i andra städer eller länder. Vädret visas i
+                  en timprognos med en graf och en daglig prognos med dagens högsta och lägsta
+                  temperatur. Appen har stöd för både dark och light mode och har en responsiv
+                  design för både stora och små skärmar.
+                </>
+              )}
+            </p>
+          </div>
+          <div className="font-bold text-sm sm:text-base">Next.js | Open-Meteo | Tailwind</div>
+        </div>
+        <div className="flex w-[260px] sm:w-[400px]  flex-col justify-center items-center ">
+          <div className="my-[30px]">
+            <img
+              className=""
+              src="/assets/weather-dashboard-preview.png"
+              alt="spotify-preveiw"
+            />
+          </div>
+          <div className="flex w-full items-center justify-around">
+            <a
+              href="https://github.com/MiltonSavander/promptopia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                {english ? "Github" : "Github"}
+              </div>
+            </a>
+            <a
+              href="https://promptopia-ruby-ten.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 flex items-center justify-center font-bold border-4 border-myDarkBlue rounded-3xl text-sm md:text-xl hover:border-myHover hover:text-myHover hover:rounded-2xl cursor-pointer transition-all ">
+                {english ? "Demo" : "Demo"}
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col-reverse md:flex-row items-center justify-around md:w-[800px] xl:w-[1000px] md:h-[400px] h-auto p-8 m-4 bg-myDarkLightBlue rounded-2xl gap-8 bg-opacity-90 bg-clip-padding backdrop-blur-sm ">
         <div className="md:w-[600px]  flex flex-col justify-between">
           <div>
@@ -197,7 +258,7 @@ function ProjectComponents() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-around md:w-[800px] xl:w-[1000px] md:h-[400px] h-auto p-8 m-4 bg-myDarkLightBlue rounded-2xl gap-8 bg-opacity-90 bg-clip-padding backdrop-blur-sm ">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-around md:w-[800px] xl:w-[1000px] md:h-[400px] h-auto p-8 m-4 bg-myDarkLightBlue rounded-2xl gap-8 bg-opacity-90 bg-clip-padding backdrop-blur-sm ">
         <div className="md:w-[600px]  flex flex-col justify-between">
           <div>
             <h1 className="font-bold text-2xl md:text-3xl mb-4 ">
