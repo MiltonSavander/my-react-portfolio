@@ -114,7 +114,7 @@ function ProjectComponents() {
           </div>
           <div className="flex w-full items-center justify-around">
             <a
-              href="https://github.com/MiltonSavander/promptopia"
+              href="https://github.com/MiltonSavander/weather-dashboard"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,7 +123,7 @@ function ProjectComponents() {
               </div>
             </a>
             <a
-              href="https://promptopia-ruby-ten.vercel.app/"
+              href="https://weather-dashboard-navy-three.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
